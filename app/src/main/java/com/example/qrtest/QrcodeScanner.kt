@@ -1,14 +1,10 @@
 package com.example.qrtest
 
-import android.Manifest
 import android.annotation.SuppressLint
 import android.content.Context
-import android.util.DisplayMetrics
-import android.util.Log
 import androidx.camera.core.*
 import androidx.camera.lifecycle.ProcessCameraProvider
 import androidx.camera.view.PreviewView
-import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.lifecycle.*
 import com.google.mlkit.vision.barcode.Barcode
@@ -16,11 +12,7 @@ import com.google.mlkit.vision.barcode.BarcodeScanner
 import com.google.mlkit.vision.barcode.BarcodeScannerOptions
 import com.google.mlkit.vision.barcode.BarcodeScanning
 import com.google.mlkit.vision.common.InputImage
-import java.util.concurrent.ExecutionException
 import java.util.concurrent.Executors
-import kotlin.math.abs
-import kotlin.math.max
-import kotlin.math.min
 
 class QrcodeScanner(
         private val onQrCapture: Barcode.() -> Unit,
